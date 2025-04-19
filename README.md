@@ -24,10 +24,10 @@ After hitting the /add post api, you can check the mysql db for the data to conf
 
 ```
 docker exec -it <mysql-container-id> bash
-mysql -u root -p       // password is rishavkumar
-show databases;
-use demodb;
-select database();
-show tables;
-select * from users;
+mysql -u root -p       <!-- password is rishavkumar -->
+show databases;        <!-- shows the list of databases -->
+use demodb;            <!-- demodb becomes the current db -->
+select database();     <!-- shows the current selected database -->
+show tables;           <!-- shows the list of tables in the current database -->
+select * from users;   <!-- shows the list of rows in users table -->
 ```
